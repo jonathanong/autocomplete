@@ -1,0 +1,12 @@
+.Autocomplete-menu {
+  position: absolute;
+}
+
+/**
+ * Not necessarily a <a>,
+ * but always clickable!
+ */
+
+.Autocomplete-option {
+  cursor: pointer;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Autocomplete</title>
+    <link rel="stylesheet" href="../build/build.css">
+    <script src="../build/build.js"></script>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+      }
+
+      .container {
+        position: relative;
+        width: 300px;
+      }
+
+      input {
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 0 5px;
+        border: 1px solid #ccc;
+        font-size: 24px;
+        line-height: 30px;
+      }
+
+      .Autocomplete-menu {
+        top: 100%;
+        left: 0;
+        height: auto;
+        min-width: 100%;
+        border: 1px solid #ccc;
+        background-color: white;
+        box-shadow: 0 1px 2px 1px rgba(0, 0, 0, .15);
+        /* transitions are messing my iphone for some reason */
+        /*transition: all .3s linear;*/
+      }
+
+      .Autocomplete-menu:empty,
+      .Autocomplete-hidden {
+        height: 0;
+        opacity: 0;
+        z-index: -1;
+        overflow: hidden;
+      }
+
+      .Autocomplete-option {
+        margin: 0;
+        padding: 5px;
+        border: 1px solid #bbb;
+      }
+
+      .Autocomplete-highlighted {
+        background-color: blue;
+      }
+
+      p {
+        padding-left: 320px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <input type="text">
+    </div>
+    <p>Selected: <span></span></p>
+    <script>
+      var Autocomplete = require('autocomplete')
+      var el = document.querySelector('input')
+      var span = document.querySelector('p span')
+      var search = Autocomplete(el)
+      search.query = function (text) {
+        if (!text) return
+        search.clear()
+        var i = text.length
+        while (i) {
+          search.push(text.slice(0, i))
+          i--
+        }
+        search.highlight(0)
+      }
+      search.on('change', function (option) {
+        span.textContent = option.id
+      })
+      search.on('hide', function () {
+        console.log('hide')
+      })
+      search.on('show', function () {
+        console.log('show')
+      })
+    </script>
+  </body>
+</html>

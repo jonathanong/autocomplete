@@ -1,0 +1,30 @@
+{
+  "name": "autocomplete",
+  "version": "0.0.0",
+  "description": "autocomplete",
+  "dependencies": {
+    "component/query": "*",
+    "component/domify": "*",
+    "component/tap-event": "*",
+    "component/keyname": "*",
+    "component/emitter": "*",
+    "component/classes": "*",
+    "component/debounce": "*",
+    "component/clickable": "*",
+    "discore/closest": "*",
+    "ianstormtaylor/next-sibling": "*",
+    "ianstormtaylor/previous-sibling": "*"
+  },
+  "development": {
+    "component/assert": "*",
+    "ianstormtaylor/trigger-event": "*"
+  },
+  "main": "lib/index.js",
+  "scripts": [
+    "lib/index.js"
+  ],
+  "styles": [
+    "lib/index.css"
+  ],
+  "license": "MIT"
+}
