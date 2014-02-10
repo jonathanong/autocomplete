@@ -6,7 +6,9 @@ var Autocomplete = require('autocomplete')
 
 var input = document.createElement('input')
 document.body.appendChild(input)
+
 var search = Autocomplete(input)
+
 search.query = function (text) {
   if (!text) return
   search.clear()

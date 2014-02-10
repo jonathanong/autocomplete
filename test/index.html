@@ -86,6 +86,11 @@
         }
         search.highlight(0)
       }
+      search.format = function (option) {
+        return '<div tabindex="1">'
+          + (option.title || option.name || option.id)
+          + '</div>'
+      }
       search.on('change', function (option) {
         span.textContent = option.id
       })
