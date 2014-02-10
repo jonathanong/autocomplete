@@ -12,6 +12,7 @@ Some philosophicaly differences:
 - Mobile first - so touching outside the menu/input closes the menu. Tap support!
 - No blur events - alt-tabbing or clicking outside the viewport won't close the menu
 - The menu doesn't close when selected - you have to do it yourself
+- Queryless - includes no query structure. You must implement querying yourself!
 - Progressive enhancement - doesn't create the `<input>` element dynamically
 
 ## Demo
