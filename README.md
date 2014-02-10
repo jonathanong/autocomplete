@@ -33,11 +33,16 @@ make test
 
 ```jade
 .container
-  .Autocomplete-menu
-  input
+  .Autocomplete-menu(.Autocomplete-hidden)
+    .Autocomplete-option(.Autocomplete-highlighted)
+    .Autocomplete-option(.Autocomplete-highlighted)
+    .Autocomplete-option(.Autocomplete-highlighted)
+  input[type="text"]
 ```
 
 Note that `.Autocomplete-menu` has `position: absolute;` by default, so you should have a non-statically positioned parent somewhere.
+
+Also note that this structure is completely optional - you can place the menu wherever you'd like.
 
 ### var search = autocomplete(element, [menu])
 
