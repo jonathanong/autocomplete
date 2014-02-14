@@ -77,7 +77,6 @@
       var span = document.querySelector('p span')
       var search = Autocomplete(el)
       search.query = function (text) {
-        if (!text) return
         search.clear()
         var i = text.length
         while (i) {
