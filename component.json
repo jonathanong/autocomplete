@@ -4,14 +4,11 @@
   "description": "autocomplete",
   "dependencies": {
     "component/query": "*",
-    "component/domify": "*",
-    "component/tap-event": "*",
     "component/keyname": "*",
-    "component/emitter": "*",
     "component/classes": "*",
     "component/debounce": "*",
-    "component/clickable": "*",
     "discore/closest": "*",
+    "jonathanong/complement": "*",
     "ianstormtaylor/next-sibling": "*",
     "ianstormtaylor/previous-sibling": "*"
   },

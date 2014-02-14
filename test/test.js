@@ -104,22 +104,12 @@ describe('Autocomplete', function () {
     })
   })
 
-  describe('.hide()', function () {
-    it('should dehighlight all elements', function () {
-      search.hide()
-
-      assert(!query('Autocomplete-highlighted'))
-      assert(!search.highlighted)
-    })
-  })
-
   describe('.clear()', function () {
     it('should remove all options', function () {
       search.clear()
 
-      assert(!query('Autocomplete-option'))
+      assert(!query('.Autocomplete-option'))
       assert(!search.options.length)
-      assert(!search.highlighted)
     })
   })
 })
