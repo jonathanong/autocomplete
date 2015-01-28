@@ -2,6 +2,9 @@
 All notable changes to this project will be documented in this file.
 
 ## [Unreleased][unreleased]
+### Fixed
+- Use component/closest rather than deprecated discore/closest
+
 ### Removed
 - No longer resets the input element's value, user must do so manually.
 
