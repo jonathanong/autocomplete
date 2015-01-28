@@ -1,7 +1,7 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
-## [Unreleased][unreleased]
+## [0.1.6] - 2015-27-2015
 ### Fixed
 - Use component/closest rather than deprecated discore/closest
 
@@ -20,7 +20,7 @@ All notable changes to this project will be documented in this file.
 
 ## [0.1.0] - 2014-02-10
 
-[unreleased]: https://github.com/jonathanong/autocomplete/compare/0.1.5...HEAD
+[0.1.6]: https://github.com/jonathanong/autocomplete/compare/0.1.5...0.1.6
 [0.1.5]: https://github.com/jonathanong/autocomplete/compare/0.1.4...0.1.5
 [0.1.4]: https://github.com/jonathanong/autocomplete/compare/0.1.3...0.1.4
 [0.1.3]: https://github.com/jonathanong/autocomplete/compare/0.1.2...0.1.3
