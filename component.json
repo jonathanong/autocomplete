@@ -7,7 +7,7 @@
     "component/keyname": "*",
     "component/classes": "*",
     "component/debounce": "*",
-    "discore/closest": "*",
+    "component/closest": "*",
     "jonathanong/complement": "*",
     "ianstormtaylor/next-sibling": "*",
     "ianstormtaylor/previous-sibling": "*"
